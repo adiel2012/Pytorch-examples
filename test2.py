@@ -45,7 +45,7 @@ for env in ["train", "test"]:
     index = -1
     for _class in classes:
         index = index + 1
-        directory = os.fsencode(os.path.abspath('./data/cifar10_raw/images/'+env+'/'+ _class))
+        directory = os.fsencode(os.path.abspath('../data/cifar10_raw/images/'+env+'/'+ _class))
         for file in os.listdir(directory):
             filename = os.fsdecode(file)
             if filename.endswith(".png"): 
